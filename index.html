@@ -5,48 +5,65 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
 		<title>Clear Canvas - Frontend Test</title>
-		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="styles/styles.css">
+
 		<meta name="HandheldFriendly" content="True">
 		<meta name="MobileOptimized" content="320">
+		
 		<!--[if IEMobile]><meta http-equiv="cleartype" content="on"><![endif]-->
 		
 		<meta name="format-detection" content="telephone=no">
 		
-		<link rel="stylesheet" href="styles/screen.css?ver=123" type="text/css" media="all" />
-	</head>
-	<body>
-		<header class="SiteHeader">
-			<a href="/" class="Logo"><img src="assets/images/logo.svg"/></a>
+	
+		
 
-			<nav class="Navigation">
-				<a href="#">Über uns</a>
-				<a href="#">Neues</a>
-				<a href="#">Karriere</a>
-				<a href="#">Kontakt</a>
-			</nav>
-			
-			<div class="MenuWrapper">
-				<a class="Menu"><span class="Hamburger"></span></a>
-				<div class="Menu-overlay">
-					<nav class="Menu-navigation">
-						<a href="#">Über uns</a>
-						<a href="#">Neues</a>
-						<a href="#">Karriere</a>
-						<a href="#">Kontakt</a>
-						<a class="Menu-close">schließen</a>
-					</nav>
-				</div>
-			</div>
-		</header>
-		<main>
-			<div class="Banner">
-				<img class="Banner-image" src="assets/images/bird.jpg" alt="Bird" />
-				<a href="#" class="Banner-content">
-					<span>Hier steht ein toller Beispielsatz.</span>
-					Hier geht's zur nächsten Seite
+	</head>
+
+	<body>
+		<header class="siteHeader">
+			<nav class="navigation navbar navbar-expand-lg navbar-light">
+				<a class="logo navbar-brand" href="/">
+					<img src="assets/images/logo.svg" height="50px"/>
 				</a>
-			</div>
-		</main>
-		<script type="text/javascript" src="scripts/site.min.js?ver=123"></script>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-list navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a href="#">Über uns</a>
+						</li>
+						<li class="nav-item">
+							<a href="#">Neues</a>
+						</li>
+						<li class="nav-item">
+							<a href="#">Karriere</a>
+						</li>
+						<li class="nav-item">
+							<a href="#">Kontakt</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<div class="main-content">
+			<img class="banner" src="assets/images/bird.jpg" alt="banner">
+			<a class="box-link" href="#">
+				<div class="clickable-box">
+					<h1>Hier steht ein toller Beispielsatz.</h1>
+					<p>Hier geht's zur nächsten Seite!</p>
+				</div>
+			</a>
+		</div>
+		
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<!-- <script type="text/javascript" src="scripts/site.min.js?ver=123"></script> -->
+
 	</body>
 </html>

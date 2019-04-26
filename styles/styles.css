@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
+
+/* header */
+
+.navigation {
+    margin: 20px 10px 50px;
+}
+
+.nav-item {
+    padding: 0 30px 0 0;
+    font-size: 20px;
+}
+
+.nav-item a {
+    color: black;
+    text-decoration: none;
+}
+
+.collapse {
+    margin: 32px 60px 0 0;
+}
+
+.navbar-collapse {
+    margin: 30px auto 0;
+}
+
+.navbar-collapse li {
+    margin-top: 10px;
+
+}
+
+
+/* main */
+
+
+.main-content {
+    margin: 25px;
+    position: relative;
+}
+
+.banner {
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.box-link:hover {
+    text-decoration: none;
+}
+
+.main-content .clickable-box {
+    margin-top: 40px;
+    transition: all .1s ease-in;
+}
+
+.clickable-box h1 {
+    font-size: 36px;
+    color: black;
+    margin: 0 0 30px;
+}
+
+.clickable-box p {
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+}
+
+@media (min-width: 992px) {
+    .main-content .clickable-box {
+        background-color: rgb(52, 146, 201);
+        border-radius: 6px;
+        position: absolute;
+        bottom: -5%;
+        right: 10%;
+        display: inline-block;
+        padding: 40px 40px;
+        width: 40%;
+        height: 250px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.527);
+    }
+
+    .clickable-box:hover {
+        transform: scale(1.05);
+        transition: all .1s ease-in;
+    }
+
+    .clickable-box h1 {
+        font-size: 36px;
+        color: #fff;
+        margin: 0 0 40px;
+    }
+    
+    .clickable-box p {
+        font-size: 24px;
+        font-weight: 400;
+        color: #fff;
+    }
+}
+
